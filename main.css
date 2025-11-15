@@ -1,0 +1,132 @@
+/*
+Color del fondo de la barra de navegación.
+
+  color:  #373435ff
+	      color de seleccion dentro de la barra de navegación.
+
+	      color: #d2a93cff
+			 color de las Letras de la barra de navegación.
+			 color: #fefefe
+*/
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+
+	background: #373435ff;
+	color: #fefefe;
+    }
+
+    /* ======= NAVEGACIÓN ======= */
+    nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	max-width: 1200px;
+	margin: auto;
+	position: -webkit-sticky; /* Para navegadores webkit */
+	position: sticky;
+    }
+
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+    .logo{
+	width:5rem;
+	padding:1rem;
+
+    }
+    /* ======= MENÚ RESPONSIVE ======= */
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ======= SECCIÓN GALERÍA ======= */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #222;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #222;
+      color: #fff;
+      margin-top: 2rem;
+    }
