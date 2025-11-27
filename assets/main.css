@@ -20,7 +20,7 @@ body {
           line-height: 1.6;
           color: #333;
         }
-    header {
+    nav {
 
 	background: #373435ff;
 	color: #fefefe;
@@ -28,11 +28,9 @@ body {
 
     /* ======= NAVEGACIÓN ======= */
     nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+      background: #373435ff;
+	color: #fefefe;
 	padding: 1rem;
-	max-width: 1200px;
 	margin: auto;
 	position: -webkit-sticky; /* Para navegadores webkit */
 	position: sticky;
@@ -91,42 +89,20 @@ body {
       }
     }
 
-    /* ======= SECCIÓN GALERÍA ======= */
-    main {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    /* ======= SECCIÓN SLIDER ======= */
+ 
+    .sld-1 {
+      background-image: url('../img/img_fil01.jpeg');
+    }
+    
+    .sld-2 {
+      background-image: url('../img/img_bio01.jpg');
+    }
+    
+    .sld-3 {
+      background-image: url('../img/img_pod01.jpg');
     }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      color: #222;
-    }
+    
 
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
-    .galeria img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .galeria img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #222;
-      color: #fff;
-      margin-top: 2rem;
-    }
+  
