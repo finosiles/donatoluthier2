@@ -92,15 +92,18 @@ body {
     /* ======= SECCIÓN SLIDER ======= */
  
     .sld-1 {
-      background-image: url('../img/img_fil01.jpeg');
+      background-image: url('../img/img_hero01.JPG');
     }
     
     .sld-2 {
-      background-image: url('../img/img_bio01.jpg');
+      background-image: url('../img/img_hero02.jpg');
     }
     
     .sld-3 {
-      background-image: url('../img/img_pod01.jpg');
+      background-image: url('../img/img_hero03.jpg');
+    }
+    .sld-4{
+      background-image: url('../img/img_hero04.jpg') ;
     }
 
     
