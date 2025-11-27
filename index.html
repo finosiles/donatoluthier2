@@ -10,16 +10,9 @@
       <!-- NAVBAR -->
     <nav class="shadow-md fixed w-full top-0 z-50">
         <div class="max-w-screen mx-auto px-4">
-            <div class="flex justify-between h-16  ">
-
+            <div class="flex justify-between h-24  ">
                 <div class="hidden md:flex w-2/3 justify-center items-center">
-                <img class="logo" alt="" src="./logo.png" />
-                <div class="flex-col justify-center items-center">
-                    <h1 class="text-center text-3xl ">Donato Bianchi</h1>
-                    <p>Guitarras clásicas y Contemporáneas</p>
-                    
-
-                </div>
+                <img class="w-auto h-16" alt="" src="./logo donato.svg" />            
             </div>
                 <!-- LOGO MOBILE -->
                 <div class="mx-2 flex items-center md:hidden">
@@ -96,7 +89,7 @@
         </div>
 
         <!-- MENU MÓVIL -->
-        <div id="mobileMenu" class=" md:hidden hidden shadow-lg flex flex-col">
+        <div id="mobileMenu" class="md:hidden hidden shadow-lg flex flex-col">
             <a href="./bio.html" class="block px-4 py-2 border-b">Bio</a>
             <a href="./filosofia.html" class="block px-4 py-2 border-b">Filosofìa Constructiva</a>
             <a href="./modelos.html" class="block px-4 py-2 border-b">Modelos</a>
@@ -133,8 +126,8 @@
   </div>
 
   <!-- Contenido del héroe -->
-  <div class="relative z-10 flex flex-col justify-center items-end h-full text-white bg-black/40">
-    <p class="text-xl mr-12 text-justify italic max-w-md">
+  <div class="relative z-10 md:flex md:flex-col justify-center items-end h-full text-white bg-black/40">
+    <p class="hidden md:block text-xl mr-16 text-justify italic max-w-md">
     Mis instrumentos son creados
     durante momentos de creatividad
     libre, sin la presión del tiempo,
@@ -168,17 +161,7 @@
     <!-- Font Awesome para iconos -->
     <script src="https://kit.fontawesome.com/a2e00e4c36.js" crossorigin="anonymous"></script>
 
-    <script>
-        // Toggle del menú móvil
-        const btn = document.getElementById("menuBtn");
-        const menu = document.getElementById("mobileMenu");
-
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
-
-    <script>
+ <script src="./assets/script.js"></script>
   const slider = document.getElementById("slider");
   const slides = slider.children;
   const dots = document.querySelectorAll(".dot");

@@ -59,7 +59,9 @@ body {
     .logo{
 	width:5rem;
 	padding:1rem;
-
+#mobileMenu{
+  
+}
     }
     /* ======= MENÚ RESPONSIVE ======= */
     .menu-toggle {
