@@ -94,18 +94,18 @@ body {
     /* ======= SECCIÓN SLIDER ======= */
  
     .sld-1 {
-      background-image: url('../img/img_hero01.JPG');
+      background-image: url('../img/img_hero01.webp');
     }
     
     .sld-2 {
-      background-image: url('../img/img_hero02.jpg');
+      background-image: url('../img/optima/img_hero02.webp');
     }
     
     .sld-3 {
-      background-image: url('../img/img_hero03.jpg');
+      background-image: url('../img/optima/img_hero03.webp');
     }
     .sld-4{
-      background-image: url('../img/img_hero04.jpg') ;
+      background-image: url('../img/optima/img_hero04.webp') ;
     }
 
     
